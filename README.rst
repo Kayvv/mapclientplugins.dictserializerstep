@@ -1,5 +1,5 @@
-Muxer
-=====
+Dict Serializer
+===============
 
-The Muxer step is a plugin for the MAP Client application.
+The Dict Serializer step is a plugin for the MAP Client application.
 
