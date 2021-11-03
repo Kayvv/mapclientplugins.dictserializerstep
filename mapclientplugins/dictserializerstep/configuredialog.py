@@ -93,7 +93,7 @@ class ConfigureDialog(QtWidgets.QDialog):
         
         output_directory = os.path.dirname(output_location)
         output_file = os.path.basename(output_location)
-        if os.path.isdir(output_directory):
+        if len(output_directory) and os.path.isdir(output_directory):
             output_directory_valid = True
             
         if sender == self._ui.lineEditOutputLocation and output_directory_valid:

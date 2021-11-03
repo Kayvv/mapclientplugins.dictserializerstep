@@ -31,7 +31,7 @@ class DictSerializerStep(WorkflowStepMountPoint):
         self.addPort(('http://physiomeproject.org/workflow/1.0/rdf-schema#port',
                       'http://physiomeproject.org/workflow/1.0/rdf-schema#uses',
                       'http://physiomeproject.org/workflow/1.0/rdf-schema#dict'))
-        self._config = {'identifier': '', 'default': True, 'output': ''}
+        self._config = {'identifier': '', 'default': False, 'output': ''}
         self._data_in = None
 
     def execute(self):
