@@ -48,7 +48,7 @@ class DictSerializerStep(WorkflowStepMountPoint):
             if not os.path.exists(output_dir):
                 os.mkdir(output_dir)
         else:
-            filename = self._config['output']
+            filename = os.path.join(self._location, self._config['output'])
 
         with open(filename, 'w') as f:
             f.write(json_string)
