@@ -56,9 +56,9 @@ class Ui_ConfigureDialog(object):
         QtCore.QMetaObject.connectSlotsByName(ConfigureDialog)
 
     def retranslateUi(self, ConfigureDialog):
-        ConfigureDialog.setWindowTitle(QtWidgets.QApplication.translate("ConfigureDialog", "ConfigureDialog", None, -1))
+        ConfigureDialog.setWindowTitle(QtWidgets.QApplication.translate("ConfigureDialog", "Configure Dict Serializer", None, -1))
         self.label0.setText(QtWidgets.QApplication.translate("ConfigureDialog", "identifier:  ", None, -1))
         self.checkBoxDefaultLocation.setText(QtWidgets.QApplication.translate("ConfigureDialog", "Use output default location", None, -1))
-        self.label0_2.setText(QtWidgets.QApplication.translate("ConfigureDialog", "Output:  ", None, -1))
+        self.label0_2.setText(QtWidgets.QApplication.translate("ConfigureDialog", "Output File:  ", None, -1))
         self.pushButtonOutputLocation.setText(QtWidgets.QApplication.translate("ConfigureDialog", "...", None, -1))
 

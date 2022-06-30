@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>ConfigureDialog</string>
+   <string>Configure Dict Serializer</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="2" column="0">
@@ -53,7 +53,7 @@
       <item row="2" column="0">
        <widget class="QLabel" name="label0_2">
         <property name="text">
-         <string>Output:  </string>
+         <string>Output File:  </string>
         </property>
        </widget>
       </item>
