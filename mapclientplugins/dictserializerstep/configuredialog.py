@@ -1,6 +1,6 @@
+import webbrowser
 
-
-from PySide6 import QtWidgets
+from PySide6 import QtCore, QtWidgets
 from mapclientplugins.dictserializerstep.ui_configuredialog import Ui_ConfigureDialog
 import os.path
 
@@ -29,7 +29,14 @@ class ConfigureDialog(QtWidgets.QDialog):
         self._previous_location = ''
         self._workflow_location = None
 
+        self.setWhatsThis('<html>Please read the documentation available \n<a href="https://abi-mapping-tools.readthedocs.io/en/latest/mapclientplugins.dictserializerstep/docs/index.html">here</a> for further details.</html>')
+
         self._make_connections()
+
+    def event(self, e):
+        if e.type() == QtCore.QEvent.Type.WhatsThisClicked:
+            webbrowser.open(e.href())
+        return super().event(e)
 
     def _make_connections(self):
         self._ui.lineEditIdentifier.textChanged.connect(self.validate)
