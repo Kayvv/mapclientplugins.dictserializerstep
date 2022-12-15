@@ -7,7 +7,7 @@ import os
 import json
 
 
-from PySide2 import QtGui, QtWidgets
+from PySide6 import QtGui, QtWidgets
 
 from mapclient.mountpoints.workflowstep import WorkflowStepMountPoint
 from mapclientplugins.dictserializerstep.configuredialog import ConfigureDialog

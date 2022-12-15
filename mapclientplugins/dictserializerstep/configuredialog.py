@@ -1,6 +1,6 @@
 
 
-from PySide2 import QtWidgets
+from PySide6 import QtWidgets
 from mapclientplugins.dictserializerstep.ui_configuredialog import Ui_ConfigureDialog
 import os.path
 
