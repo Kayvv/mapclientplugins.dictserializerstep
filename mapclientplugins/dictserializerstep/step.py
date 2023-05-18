@@ -103,7 +103,6 @@ class DictSerializerStep(WorkflowStepMountPoint):
         """
         return json.dumps(self._config, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
-
     def deserialize(self, string):
         """
         Add code to deserialize this step from string.  This method should
@@ -116,5 +115,3 @@ class DictSerializerStep(WorkflowStepMountPoint):
         d.set_workflow_location(self._location)
         d.setConfig(self._config)
         self._configured = d.validate()
-
-
