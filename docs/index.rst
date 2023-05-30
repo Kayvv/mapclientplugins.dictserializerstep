@@ -1,37 +1,22 @@
-MAP Client Plugin - Dict Serializer
-===================================
+Dict Serializer
+===============
 
+Overview
+--------
 The **Dict Serializer** is MAP Client plugin for saving a Python dictionary to a location outside the workflow.
 
-.. _fig-mcp-dict-serializer-un-configured-step:
+Specification
+-------------
 
-.. figure:: _images/un-configured-step.png
-   :alt: Un-configured step icon
+Information on this plugins' specificaiton is available :ref:`here <mcp-dictserializer-specification>`.
 
-   An un-configured *Dict Serializer* step icon.
+Configuration
+-------------
 
-Configure
----------
+Information on this plugins' configuration is available :ref:`here <mcp-dictserializer-configuration>`.
 
-This step is used for saving a Python dictionary on the local disk outside the workflow directory.
-This step uses a *http://physiomeproject.org/workflow/1.0/rdf-schema#dict* and saves it in JSON format to a location on the local disk.
-To choose the output location use the *...* button to open a file chooser dialog.
-The *Output* input is used to hold the relative path from the workflow to the saved JSON file.
+Instructions
+------------
 
-.. _fig-mcp-dict-serializer-configure-dialog:
-
-.. figure:: _images/step-configuration-dialog.png
-   :alt: Step configure dialog
-
-   *Dict Serializer* step configuration dialog.
-
-The *Use output default location* checkbox is *deprecated* and will be removed in a future release.
-
-Ports
------
-
-This plugin:
-
-* **uses**:
-
-  * *http://physiomeproject.org/workflow/1.0/rdf-schema#dict*
+This is a non-interactive step.
+See `Configuration`_.
